@@ -18,7 +18,6 @@
 - [Machine Learning Model](#machine-learning-model)
 - [Deployment](#deployment)
 - [Research Impact](#research-impact)
-- [PhD Application Context](#phd-application-context)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
