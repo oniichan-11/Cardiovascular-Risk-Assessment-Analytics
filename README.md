@@ -95,3 +95,19 @@ This project demonstrates **AI-powered clinical decision support for cardiovascu
 git clone https://github.com/[YourUsername]/Cardiovascular-Risk-Assessment-Analytics.git
 cd Cardiovascular-Risk-Assessment-Analytics
 
+###Create Virtual Environment
+conda create --name cardio-app python=3.11
+conda activate cardio-app
+
+
+### Install dependencies
+pip install -r requirements.txt
+
+### Run stream lit app
+cd streamlit
+streamlit run uci_cardiovascular_app.py
+
+###Open in Browser
+Local URL: http://localhost:8501
+
+
