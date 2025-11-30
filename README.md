@@ -93,6 +93,6 @@ This project demonstrates **AI-powered clinical decision support for cardiovascu
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/[YourUsername]/cardiovascular-analytics-portfolio.git
-cd cardiovascular-analytics-portfolio
+git clone https://github.com/[YourUsername]/Cardiovascular-Risk-Assessment-Analytics.git
+cd Cardiovascular-Risk-Assessment-Analytics
 
