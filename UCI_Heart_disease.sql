@@ -1,0 +1,1 @@
+SELECT * FROM uci_heart_disease.uci_data_cleaned;
