@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -7,7 +8,6 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import sys
 
-import os
 
 
 
@@ -37,12 +37,26 @@ st.set_page_config(
 @st.cache_resource
 def load_model():
     try:
-        model = joblib.load('uci_cardiovascular_model.pkl')
-        model_info = joblib.load('uci_model_info.pkl')
+        # Get root directory (one level up from streamlit/)
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        root_dir = os.path.dirname(script_dir)
+        
+        # Build full paths
+        model_path = os.path.join(root_dir, 'uci_cardiovascular_model.pkl')
+        model_info_path = os.path.join(root_dir, 'uci_model_info.pkl')
+        
+        # Load
+        model = joblib.load(model_path)
+        model_info = joblib.load(model_info_path)
+        
         return model, model_info
-    except FileNotFoundError:
-        st.error("Model files not found. Please ensure uci_cardiovascular_model.pkl and uci_model_info.pkl are in the same directory.")
+        
+    except FileNotFoundError as e:
+        st.error(f"Model files not found: {e}")
         return None, None
+
+model, model_info = load_model()
+
 
 model, model_info = load_model()
 
@@ -1413,3 +1427,4 @@ st.markdown("""
     <p>🫀 Advancing Healthcare Through Artificial Intelligence 🫀</p>
 </div>
 """, unsafe_allow_html=True)
+
