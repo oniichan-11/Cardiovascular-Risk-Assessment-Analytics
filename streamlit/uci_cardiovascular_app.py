@@ -58,7 +58,6 @@ def load_model():
 model, model_info = load_model()
 
 
-model, model_info = load_model()
 
 # Custom CSS for professional styling
 st.markdown("""
@@ -1427,4 +1426,5 @@ st.markdown("""
     <p>🫀 Advancing Healthcare Through Artificial Intelligence 🫀</p>
 </div>
 """, unsafe_allow_html=True)
+
 
