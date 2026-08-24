@@ -28,7 +28,7 @@
 
 This project demonstrates **AI-powered clinical decision support for cardiovascular disease screening** in resource-limited healthcare settings. It combines:
 
-✅ **Machine Learning** - Random Forest classifier (92% ROC-AUC)  
+✅ **Machine Learning** - Logistic Regression (92.3% ROC-AUC)  
 ✅ **Database Design** - 1,207 lines of production-grade SQL  
 ✅ **Interactive Dashboard** - Real-time risk stratification  
 ✅ **Healthcare Economics** - 99% cost reduction vs. traditional screening  
@@ -51,7 +51,7 @@ This project demonstrates **AI-powered clinical decision support for cardiovascu
 - **Data Transparency** - Download analysis results
 
 ### Technical Features
-- **Machine Learning Pipeline** - scikit-learn Random Forest with hyperparameter tuning
+- **Machine Learning Pipeline** - scikit-learn Logistic Regression with hyperparameter tuning
 - **SQL Analytics** - 26 professional queries across epidemiology, economics, and outcomes
 - **Responsive Design** - Works on desktop, tablet, mobile
 - **Dark/Light Theme** - Accessibility-focused design
